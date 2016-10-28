@@ -1,0 +1,99 @@
+/* General purpose WSX5's required classes */
+.imClear { visibility: hidden; clear: both; border: 0; margin: 0; padding: 0; }
+.imHidden { display: none; }
+.imCaptFrame { vertical-align: middle; }
+.imAlertMsg { padding: 10px; font: 10pt "Trebuchet MS"; text-align: center; color: #000; background-color: #fff; border: 1px solid; }
+.alert { padding: 5px 7px; margin: 5px 0 10px 0; border-radius: 5px; border: 1px solid; font: inherit; }
+.alert-red { color: #ff6565; border-color: #ff6565; background-color: #fcc; }
+.alert-green { color: #46543b; border-color: #8da876; background-color: #d5ffb3; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+.vertical-middle, tr.vertical-middle td { vertical-align: middle; }
+
+
+/* Page default */
+#imContent {font: normal normal normal 10pt Tahoma; color: #000000; background-color: transparent; text-align: left; text-decoration: none; ; }
+
+
+/* Page Title */
+#imPgTitle, #imPgTitle a, .imPgTitle, .imPgTitle a { padding-top: 2px; padding-bottom: 2px; margin: 5px 0; font: normal normal bold 12pt 'Copperplate Gothic Light'; color: #000000; background-color: transparent; text-align: left; text-decoration: none; }
+#imPgTitle, .imPgTitle { border-width: 1px; border-style: solid; border-color: transparent transparent transparent transparent; }
+#imPgTitle.imTitleMargin, .imPgTitle.imTitleMargin { margin-left: 6px; margin-right: 6px; }
+
+
+/* Breadcrumb */
+.imBreadcrumb, #imBreadcrumb { display: none; }
+.imBreadcrumb, .imBreadcrumb a, #imBreadcrumb, #imBreadcrumb a { padding-top: 2px; padding-bottom: 2px; font: normal normal normal 7pt Tahoma; color: #A9A9A9; background-color: transparent; text-align: left; text-decoration: none;  border-width: 1px; border-style: solid; border-color: transparent transparent transparent transparent}
+.imBreadcrumb a, .imBreadcrumb a:link, .imBreadcrumb a:hover, .imBreadcrumb a:visited, .imBreadcrumb a:active { color: #A9A9A9; }
+
+
+/* Links */
+.imCssLink:link, .imCssLink { background-color: transparent; color: #0000FF; text-decoration: underline; }
+.imCssLink:visited { background-color: transparent; color: #EE82EE; text-decoration: underline; }
+.imCssLink:hover, .imCssLink:active, .imCssLink:hover, .imCssLink:active { background-color: transparent; color: #0000FF; text-decoration: underline; }
+.imAbbr:link { background-color: transparent; color: #0000FF; border-bottom: 1px dotted #0000FF; text-decoration: none; }
+.imAbbr:visited { background-color: transparent; color: #EE82EE; border-bottom: 1px dotted #EE82EE; text-decoration: none; }
+.imAbbr:hover, .imAbbr:active { background-color: transparent; color: #0000FF; border-bottom: 1px dotted #0000FF; text-decoration: none; }
+
+
+
+
+
+/* Popup */
+#imGuiPopUp { padding: 10px; position: fixed; background-color: #000000; border-top: 1px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; font: normal normal normal 9pt Tahoma; color: #000000; background-color: #FFFFFF; text-align: left; text-decoration: none; ;}
+.imGuiButton { margin-top: 20px; margin-left: auto; margin-right: auto; text-align: center;  width: 80px; cursor: pointer; background-color: #444; color: white; padding: 5px; font-size: 14px; font-family: Arial; }
+#imGuiPopUpBg { position: fixed; top: 0px; left: 0px; background-color: #000000; }
+#imWebSiteX5Adv {position: absolute; top: 0; right: 0; z-index: 1500; overflow: hidden; }
+#imWebSiteX5AdvObj {position: relative; }
+#welcome-flags { margin: 0 auto; text-align: center; }
+#welcome-flags div { display: inline; margin: 10px; }
+#welcome-mediaplayertarget { overflow: hidden; }
+.imLogin { width: 250px; margin: 0 auto; }
+.imLogin input[type=text], .imLogin input[type=password] { width: 97%; }
+.imLogin .imLoginBlock { margin-bottom: 10px; }
+#imLoginDescription { margin: 0 5px 20px 5px; }
+#imLoginError { color: red; }
+.imLogoutLink { color: inherit; }
+
+/* CONTAINER AND TITLE */
+#imPgTitle.searchPageTitle { margin-left: 5px; margin-right: 5px; }
+
+
+/* Current or hover font style */
+#imSearchSideBar li:hover { background-color: #808080; cursor: pointer; }
+#imSearchSideBar li:hover a, #imSearchSideBar li:hover .imScMnTxt { cursor: pointer; text-decoration: none; color: #FFFFFF; font-style: normal; font-weight: normal; }
+.imScMnTxt a { display: block; width: 100%; }
+
+/* Section font style */
+#imSearchSideBar .imPgMnSeparator a, #imSearchSideBar .imPgMnSeparator .imScMnTxt, #imSearchSideBar .imPgMnSeparator:hover a, #imSearchSideBar .imPgMnSeparator .imScMnTxt { cursor: auto; background-color: transparent; text-decoration: none; color: #A9A9A9; font-style: normal; font-weight: bold; }
+#imSearchSideBar li:hover.imPgMnSeparator { cursor: auto; background-color: transparent; }
+#imSearchSideBar ul a, #imSearchSideBar ul a:hover, #imSearchSideBar ul a:visited { font: inherit; color: inherit; text-align: inherit; text-decoration: none; }
+
+
+
+html {position: relative; margin: 0; padding: 0; background-image: url('bg.jpg'); background-position: center top; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; background-color: #E0E0E0}
+body {margin: 0; padding: 0; text-align: left;}
+#imPage {margin: 15px auto 15px auto; width: 960px; position: relative;}
+#imHeaderBg {position: absolute; left: 0; top: 0; height: 165px; width: 100%; background-color: transparent}
+#imHeader {height: 150px; background-color: transparent; background-image: url('top.png'); background-position: top left; background-repeat: no-repeat;}
+#imMnMn {float: left;  width: 120px; padding: 5px 5px 5px 5px;}
+#imMnMn > ul { text-align: left; }
+#imMnMnGraphics { position: absolute; top: 150px; bottom: 75px; left: 0; width: 130px; background-color: transparent}
+#imContent {min-height: 380px; position: relative; width: 820px; padding: 5px 5px 5px 5px; margin-left: 130px; }
+#imContentGraphics {min-height: 380px; position: absolute; top: 150px; bottom: 75px; right: 0; width: 830px; background-color: transparent}
+#imFooterBg {position: absolute; left: 0; bottom: 0; height: 90px; width: 100%; background-color: transparent}
+#imFooter {position: relative; margin: 0 auto; height: 75px; width: 960px; background-color: transparent;}
+
+.input{
+		margin: 2em 23em 0 0;
+		}
+		
+		label{
+		margin: 0 0 0 16em;
+		width:25%;
+		float: left;
+		}
+		
+		#botonEntrar{
+		 margin: 0 0 0 19em;
+		}
