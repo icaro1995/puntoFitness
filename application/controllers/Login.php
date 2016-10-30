@@ -47,52 +47,51 @@ class Login extends CI_Controller {
 	
 	function check_database($password)
 	{
+	
+		//Field validation succeeded.  Validate against database
 		$username = $this->input->post('usuario');
 		$type="";
 	
+		//query the database
 		$resultCliente = $this->Cliente_modelo->login($username, $password);
-		$resultProfesor = $this->Profesor_modelo->login($username, $password );
-		$resultAdmin = $this->Administrador_modelo->login($username, $password );
-		
+		$resultProfesor = $this->Profesor_modelo->login ( $username, $password );
+		$resultAdmin = $this->Administrador_modelo->login ( $username, $password );
 		$result ="";
-		
-		if ($resultCliente) {
+		if ($resultCliente && !$resultProfesor  && !$resultAdmin) {
 			$result = $resultCliente; $type='cliente';
-			
+				
+		} else {
+			if (!$resultCliente && $resultProfesor && !$resultAdmin) {
+				$result = $resultProfesor; $type='profesor';
+			} else {
+				if ($resultAdmin) {
+					$result = $resultAdmin; $type='administrador';
+				}
+			}
 		}
-		else 
-			
-		if($resultProfesor){
-			$result = $resultProfesor; $type='profesor';
-		}
-		else
-		
-		if ($resultAdmin){
-			$result = $resultAdmin; $type='administrador';
-		
-		}	
-		
+	
+		 
 		if($result)
-		{	
+		{
 			$sess_array = array();
 			foreach($result as $row)
-			{	
-				$sess_array = array(
-						'id' => $row->id,
-						'username' => $row->dni,
-						'name' =>$row->nombre,
-						'login'=>TRUE,
-						'usertype' =>$type
-				);
-				$this->session->set_userdata('logged_in', $sess_array);
+			{	echo $row->nombre;
+			$sess_array = array(
+					'id' => $row->id,
+					'username' => $row->dni,
+					'name' =>$row->nombre,
+					'login'=>TRUE,
+					'usertype' =>$type
+			);
+			$this->session->set_userdata('logged_in', $sess_array);
 			}
-			
+				
 			return true;
 		}
 		else
-		{	
+		{
 			$this->form_validation->set_message('check_database', 'Usuario o contraseña incorrectos.');
-				
+	
 			return false;
 		}
 	}

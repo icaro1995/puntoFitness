@@ -6,19 +6,18 @@ class Administrador_modelo extends CI_Model{
 	function login($dni, $password)
 	{
 		
-		$this->db->select ( 'id,dni,nombre,password' );
-		$this->db->from ( 'usuario' );
-		$this->db->where('idrol',1);
-		$this->db->where ( 'dni', $dni );
-		$this->db->where ( 'password', $password );
-		$this->db->limit ( 1 );
-		
+		$this -> db -> select('id,dni,nombre,password');
+		$this -> db -> from('usuario');
+		$this -> db -> where('idrol', 1);
+		$this -> db -> where('dni', $dni);
+		$this -> db -> where('password', $password);
+		$this -> db -> limit(1);
 	
 		$query = $this -> db -> get();
 	
 		if($query -> num_rows() == 1)
 		{
-			
+				
 			return $query->result();
 		}
 		else
