@@ -34,7 +34,7 @@
         <!-- Optionally, you can add icons to the links -->
     
     <div class="container">
-  <div class="panel-group"style="width:230px; background-color:#3d5c87;position:relative;right:2em;">
+  <div class="panel-group"style="width:230px; background-color:transparent;position:relative;right:2em;">
     <div class="panel panel-default">
       <?php $i=0; $sections=$secciones; 
         
