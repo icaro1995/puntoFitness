@@ -2,7 +2,6 @@
   <header class="main-header">
 
 
-  
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="<?php echo base_url('recursos/css/skins_adminlte/_all-skins.min.css')?>">
@@ -10,12 +9,13 @@
 
 
     <!-- Logo -->
-
+		
       <!-- mini logo for sidebar mini 50x50 pixels -->
+      <a class=logo href=#>
       <span class="logo-mini"><b>P</b>FN</span>
       <!-- logo for regular state and mobile devices -->
       <span class="logo-lg"><b>Punto</b>Fitness</span>
-    </a>
+   </a>
 
     <!-- Header Navbar -->
     <nav class="navbar navbar-static-top" role="navigation">
