@@ -1,4 +1,5 @@
 <?php
+require_once APPPATH.'controllers/Security.php';
 class Profesor extends CI_Controller {
 	function __construct() {
 		parent::__construct ();
