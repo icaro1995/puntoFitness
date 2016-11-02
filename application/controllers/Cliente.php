@@ -1,5 +1,5 @@
 <?php 
-
+require_once APPPATH.'controllers/Security.php';
 class Cliente extends CI_Controller{
 	function __construct()
 	{
