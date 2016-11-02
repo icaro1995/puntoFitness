@@ -1,5 +1,5 @@
 <?php 
-
+require_once APPPATH.'controllers/Security.php';
 
 class Administrador extends CI_Controller{
 	
