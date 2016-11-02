@@ -1,4 +1,5 @@
 <?php 
+require_once APPPATH.'controllers/Security.php';
 
 class Nota extends CI_Controller{
 	
